@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <% include ../partials/head %>
+    <body>
+        <header>
+            <% include ../partials/header %>
+        </header>
+
+        <main>
+          <div class="container">
+            <ul>
+              <% locals.userlist.forEach(function(user) { %>
+                <li><%= user.id %> | <%= user.user %></li>
+              <% }) %>
+            </ul>
+          </div>
+
+
+        <footer>
+            <% include ../partials/footer %>
+        </footer>
+    </body>
+</html>
